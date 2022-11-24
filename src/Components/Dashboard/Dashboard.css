@@ -1,0 +1,34 @@
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+    content: 'next';
+    color: black;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+    content: 'prev';
+    color: black;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.myLayer {
+    position: absolute;
+    /* becomes a layer */
+    left: 280px;
+    /* relative to its parent wrapper */
+    top: 350px;
+    /* relative to its parent wrapper */
+    z-index: 2;
+    font-size: 30px;
+}
+.swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    top: -20px;
+    position: relative;
+    transition-property: transform;
+}
